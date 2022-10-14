@@ -1,0 +1,67 @@
+#!/usr/bin/make -f
+#export DH_VERBOSE = 1
+
+
+export DEB_BUILD_MAINT_OPTIONS = hardening=+all
+
+export DEB_CFLAGS_MAINT_APPEND  = -Wall -pedantic
+export DEB_LDFLAGS_MAINT_APPEND =
+
+include /usr/share/dpkg/pkg-info.mk
+
+export VERSION := $(DEB_VERSION_UPSTREAM)
+export MULTIARCH := $(DEB_HOST_MULTIARCH)
+export PYBUILD_SYSTEM := distutils
+
+
+%:
+	dh $@ --with python3
+
+%-arch:
+	dh $@
+
+%-indep:
+	dh $@ --with python3
+
+clean:
+	dh $@
+
+override_dh_auto_clean-indep:
+	-dh_auto_clean --buildsystem=pybuild --sourcedirectory=python/
+	# mh_(un)patchpoms does not obey --sourcedirectory=java/
+	-mh_patchpoms -plibqrcodegen-java
+	-dh_auto_clean --buildsystem=maven --sourcedirectory=java/ -plibqrcodegen-java
+	-mh_unpatchpoms -plibqrcodegen-java
+	rm -rf python/qrcodegen.egg-info
+
+execute_before_dh_auto_configure-indep:
+	dh_auto_configure --buildsystem=maven -plibqrcodegen-java
+
+override_dh_auto_build-indep:
+	dh_auto_build --buildsystem=pybuild --sourcedirectory=python/
+	dh_auto_build --buildsystem=maven --sourcedirectory=java/
+
+override_dh_auto_install-indep:
+	# mv, sed, rm: work around buildsystem=maven calling mh_resolve_dependencies in java/
+	mv java/pom.xml.save java/pom.xml.backup
+	dh_auto_install -plibqrcodegen-java --buildsystem=maven --sourcedirectory=java/
+	mv java/pom.xml.backup java/pom.xml.save
+	mh_unpatchpoms -plibqrcodegen-java
+	sed -i 's/maven\./maven:/' debian/libqrcodegen-java.substvars
+	rm -r java/.debianVersion java/debian/
+	dh_auto_install --buildsystem=pybuild --sourcedirectory=python/
+
+override_dh_auto_clean-arch:
+	dh_auto_clean --sourcedirectory=c/
+	dh_auto_clean --sourcedirectory=cpp/
+
+override_dh_auto_build-arch:
+	dh_auto_build --sourcedirectory=c/
+	dh_auto_build --sourcedirectory=cpp/
+
+override_dh_auto_test-arch:
+	./c/qrcodegen-test
+
+override_dh_auto_install-arch:
+	dh_auto_install --sourcedirectory=c/
+	dh_auto_install --sourcedirectory=cpp/

@@ -1,0 +1,15 @@
+libqrcodegen.so.1 libqrcodegen1 #MINVER#
+* Build-Depends-Package: libqrcodegen-dev
+ qrcodegen_calcSegmentBufferSize@Base 1.4.0
+ qrcodegen_encodeBinary@Base 1.2.1
+ qrcodegen_encodeSegments@Base 1.4.0
+ qrcodegen_encodeSegmentsAdvanced@Base 1.4.0
+ qrcodegen_encodeText@Base 1.2.1
+ qrcodegen_getModule@Base 1.2.1
+ qrcodegen_getSize@Base 1.2.1
+ qrcodegen_isAlphanumeric@Base 1.4.0
+ qrcodegen_isNumeric@Base 1.4.0
+ qrcodegen_makeAlphanumeric@Base 1.4.0
+ qrcodegen_makeBytes@Base 1.4.0
+ qrcodegen_makeEci@Base 1.4.0
+ qrcodegen_makeNumeric@Base 1.4.0

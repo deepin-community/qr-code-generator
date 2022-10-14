@@ -1,0 +1,4 @@
+usr/include/qrcodegen/*.h
+usr/lib/*/libqrcodegen.so
+usr/lib/*/libqrcodegen.a
+usr/lib/*/pkgconfig/qrcodegen.pc

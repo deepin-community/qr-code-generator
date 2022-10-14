@@ -1,0 +1,64 @@
+qr-code-generator (1.8.0-1.1) unstable; urgency=medium
+
+  * Non-maintainer upload.
+  * No change source-only upload.
+
+ -- Boyuan Yang <byang@debian.org>  Mon, 16 May 2022 20:25:05 -0400
+
+qr-code-generator (1.8.0-1) unstable; urgency=medium
+
+  * New upstream release
+  * Package java library (Closes: #1010618)
+  * Bump Standards-Version to 4.6.1
+
+ -- Yangfl <mmyangfl@gmail.com>  Mon, 16 May 2022 23:34:58 +0800
+
+qr-code-generator (1.7.0-2) unstable; urgency=medium
+
+  * Fix ABI interface
+
+ -- Yangfl <mmyangfl@gmail.com>  Mon, 24 Jan 2022 22:44:43 +0800
+
+qr-code-generator (1.7.0-1) unstable; urgency=medium
+
+  * New upstream release
+  * Bump Standards-Version to 4.6.0
+
+ -- Yangfl <mmyangfl@gmail.com>  Sun, 02 Jan 2022 18:52:31 +0800
+
+qr-code-generator (1.6.0-1) unstable; urgency=medium
+
+  * New upstream release
+  * Bump Standards-Version to 4.5.1
+  * Bump debhelper compat to 13
+  * Add upstream metadata
+
+ -- Yangfl <mmyangfl@gmail.com>  Sun, 21 Feb 2021 23:21:08 +0800
+
+qr-code-generator (1.5.0-2) unstable; urgency=medium
+
+  * Fix symbols on 32-bit architectures
+
+ -- Yangfl <mmyangfl@gmail.com>  Mon, 29 Jul 2019 11:09:12 +0800
+
+qr-code-generator (1.5.0-1) unstable; urgency=medium
+
+  * New upstream release
+  * Bump Standards-Version to 4.4.0
+  * Bump debhelper compat to 12
+
+ -- Yangfl <mmyangfl@gmail.com>  Sun, 21 Jul 2019 01:11:52 +0800
+
+qr-code-generator (1.4.0-1) unstable; urgency=medium
+
+  * New upstream release
+  * Fix FTBFS on arch any (Closes: #914148)
+  * Add autopkgtest
+
+ -- Yangfl <mmyangfl@gmail.com>  Sun, 18 Nov 2018 15:00:20 +0800
+
+qr-code-generator (1.2.1-1) unstable; urgency=medium
+
+  * Initial release (Closes: #909158)
+
+ -- Yangfl <mmyangfl@gmail.com>  Wed, 19 Sep 2018 12:46:28 +0800

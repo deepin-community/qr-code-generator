@@ -1,0 +1,91 @@
+libqrcodegencpp.so.1 libqrcodegencpp1 #MINVER#
+* Build-Depends-Package: libqrcodegencpp-dev
+ (c++)"qrcodegen::data_too_long::data_too_long(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)@Base" 1.4.0
+ (c++)"qrcodegen::data_too_long::~data_too_long()@Base" 1.4.0
+ (c++)"qrcodegen::QrCode::PENALTY_N1@Base" 1.2.1
+ (c++)"qrcodegen::QrCode::PENALTY_N2@Base" 1.2.1
+ (c++)"qrcodegen::QrCode::PENALTY_N3@Base" 1.2.1
+ (c++)"qrcodegen::QrCode::PENALTY_N4@Base" 1.2.1
+ (c++)"qrcodegen::QrCode::encodeText(char const*, qrcodegen::QrCode::Ecc)@Base" 1.2.1
+ (c++)"qrcodegen::QrCode::drawVersion()@Base" 1.2.1
+ (c++)"qrcodegen::QrCode::encodeBinary(std::vector<unsigned char, std::allocator<unsigned char> > const&, qrcodegen::QrCode::Ecc)@Base" 1.2.1
+ (c++)"qrcodegen::QrCode::drawCodewords(std::vector<unsigned char, std::allocator<unsigned char> > const&)@Base" 1.2.1
+ (c++)"qrcodegen::QrCode::getFormatBits(qrcodegen::QrCode::Ecc)@Base" 1.4.0
+ (c++)"qrcodegen::QrCode::drawFormatBits(int)@Base" 1.2.1
+ (c++)"qrcodegen::QrCode::encodeSegments(std::vector<qrcodegen::QrSegment, std::allocator<qrcodegen::QrSegment> > const&, qrcodegen::QrCode::Ecc, int, int, int, bool)@Base" 1.2.1
+ (c++)"qrcodegen::QrCode::drawFinderPattern(int, int)@Base" 1.2.1
+ (c++)"qrcodegen::QrCode::setFunctionModule(int, int, bool)@Base" 1.2.1
+ (c++)"qrcodegen::QrCode::getNumDataCodewords(int, qrcodegen::QrCode::Ecc)@Base" 1.2.1
+ (c++)"qrcodegen::QrCode::reedSolomonMultiply(unsigned char, unsigned char)@Base" 1.5.0
+ (c++)"qrcodegen::QrCode::drawAlignmentPattern(int, int)@Base" 1.2.1
+ (c++)"qrcodegen::QrCode::drawFunctionPatterns()@Base" 1.2.1
+ (c++)"qrcodegen::QrCode::getNumRawDataModules(int)@Base" 1.2.1
+ (c++)"qrcodegen::QrCode::ECC_CODEWORDS_PER_BLOCK@Base" 1.2.1
+ (c++)"qrcodegen::QrCode::reedSolomonComputeDivisor(int)@Base" 1.5.0
+ (c++)"qrcodegen::QrCode::NUM_ERROR_CORRECTION_BLOCKS@Base" 1.2.1
+ (c++)"qrcodegen::QrCode::reedSolomonComputeRemainder(std::vector<unsigned char, std::allocator<unsigned char> > const&, std::vector<unsigned char, std::allocator<unsigned char> > const&)@Base" 1.5.0
+ (c++)"qrcodegen::QrCode::getBit(long, int)@Base" 1.4.0
+ (c++)"qrcodegen::QrCode::applyMask(int)@Base" 1.2.1
+ (c++)"qrcodegen::QrCode::QrCode(int, qrcodegen::QrCode::Ecc, std::vector<unsigned char, std::allocator<unsigned char> > const&, int)@Base" 1.2.1
+ (c++)"qrcodegen::BitBuffer::appendBits(unsigned int, int)@Base" 1.2.1
+ (c++)"qrcodegen::BitBuffer::BitBuffer()@Base" 1.2.1
+ (c++)"qrcodegen::QrSegment::makeNumeric(char const*)@Base" 1.2.1
+ (c++)"qrcodegen::QrSegment::getTotalBits(std::vector<qrcodegen::QrSegment, std::allocator<qrcodegen::QrSegment> > const&, int)@Base" 1.2.1
+ (c++)"qrcodegen::QrSegment::makeSegments(char const*)@Base" 1.2.1
+ (c++)"qrcodegen::QrSegment::isAlphanumeric(char const*)@Base" 1.2.1
+ (c++)"qrcodegen::QrSegment::makeAlphanumeric(char const*)@Base" 1.2.1
+ (c++)"qrcodegen::QrSegment::ALPHANUMERIC_CHARSET@Base" 1.2.1
+ (c++)"qrcodegen::QrSegment::Mode::ALPHANUMERIC@Base" 1.2.1
+ (c++)"qrcodegen::QrSegment::Mode::ECI@Base" 1.2.1
+ (c++)"qrcodegen::QrSegment::Mode::BYTE@Base" 1.2.1
+ (c++)"qrcodegen::QrSegment::Mode::KANJI@Base" 1.2.1
+ (c++)"qrcodegen::QrSegment::Mode::NUMERIC@Base" 1.2.1
+ (c++)"qrcodegen::QrSegment::Mode::Mode(int, int, int, int)@Base" 1.2.1
+ (c++)"qrcodegen::QrSegment::makeEci(long)@Base" 1.2.1
+ (c++)"qrcodegen::QrSegment::isNumeric(char const*)@Base" 1.2.1
+ (c++)"qrcodegen::QrSegment::makeBytes(std::vector<unsigned char, std::allocator<unsigned char> > const&)@Base" 1.2.1
+ (c++)"qrcodegen::QrSegment::QrSegment(qrcodegen::QrSegment::Mode, int, std::vector<bool, std::allocator<bool> >&&)@Base" 1.2.1
+ (c++)"qrcodegen::QrSegment::QrSegment(qrcodegen::QrSegment::Mode, int, std::vector<bool, std::allocator<bool> > const&)@Base" 1.2.1
+ (c++)"qrcodegen::QrSegment::QrSegment(qrcodegen::QrSegment::Mode const&, int, std::vector<bool, std::allocator<bool> >&&)@Base" 1.7.0
+ (c++)"qrcodegen::QrSegment::QrSegment(qrcodegen::QrSegment::Mode const&, int, std::vector<bool, std::allocator<bool> > const&)@Base" 1.7.0
+ (c++)"qrcodegen::QrCode::getVersion() const@Base" 1.2.1
+ (c++)"qrcodegen::QrCode::toSvgString[abi:cxx11](int) const@Base" 1.2.1
+ (c++)"qrcodegen::QrCode::getPenaltyScore() const@Base" 1.2.1
+ (c++)"qrcodegen::QrCode::addEccAndInterleave(std::vector<unsigned char, std::allocator<unsigned char> > const&) const@Base" 1.4.0
+ (c++|arch-bits=32)"qrcodegen::QrCode::finderPenaltyAddHistory(int, std::array<int, 7u>&) const@Base" 1.6.0
+ (c++|arch-bits=64)"qrcodegen::QrCode::finderPenaltyAddHistory(int, std::array<int, 7ul>&) const@Base" 1.6.0
+ (c++)"qrcodegen::QrCode::getErrorCorrectionLevel() const@Base" 1.2.1
+ (c++|arch-bits=32)"qrcodegen::QrCode::finderPenaltyCountPatterns(std::array<int, 7u> const&) const@Base" 1.5.0
+ (c++|arch-bits=64)"qrcodegen::QrCode::finderPenaltyCountPatterns(std::array<int, 7ul> const&) const@Base" 1.5.0
+ (c++)"qrcodegen::QrCode::getAlignmentPatternPositions() const@Base" 1.4.0
+ (c++|arch-bits=32)"qrcodegen::QrCode::finderPenaltyTerminateAndCount(bool, int, std::array<int, 7u>&) const@Base" 1.5.0
+ (c++|arch-bits=64)"qrcodegen::QrCode::finderPenaltyTerminateAndCount(bool, int, std::array<int, 7ul>&) const@Base" 1.5.0
+ (c++)"qrcodegen::QrCode::module(int, int) const@Base" 1.2.1
+ (c++)"qrcodegen::QrCode::getMask() const@Base" 1.2.1
+ (c++)"qrcodegen::QrCode::getSize() const@Base" 1.2.1
+ (c++)"qrcodegen::QrCode::getModule(int, int) const@Base" 1.2.1
+ (c++)"qrcodegen::QrSegment::getNumChars() const@Base" 1.2.1
+ (c++)"qrcodegen::QrSegment::Mode::getModeBits() const@Base" 1.2.1
+ (c++)"qrcodegen::QrSegment::Mode::numCharCountBits(int) const@Base" 1.2.1
+ (c++)"qrcodegen::QrSegment::getData() const@Base" 1.2.1
+ (c++)"qrcodegen::QrSegment::getMode() const@Base" 1.2.1
+ (c++|optional=templinst)"std::_Bvector_base<std::allocator<bool> >::_M_deallocate()@Base" 1.2.1
+ (c++|optional=templinst)"void std::vector<qrcodegen::QrSegment, std::allocator<qrcodegen::QrSegment> >::emplace_back<qrcodegen::QrSegment>(qrcodegen::QrSegment&&)@Base" 1.2.1
+ (c++|optional=templinst)"void std::vector<qrcodegen::QrSegment, std::allocator<qrcodegen::QrSegment> >::_M_realloc_insert<qrcodegen::QrSegment>(__gnu_cxx::__normal_iterator<qrcodegen::QrSegment*, std::vector<qrcodegen::QrSegment, std::allocator<qrcodegen::QrSegment> > >, qrcodegen::QrSegment&&)@Base" 1.2.1
+ (c++|optional=templinst)"std::vector<qrcodegen::QrSegment, std::allocator<qrcodegen::QrSegment> >::~vector()@Base" 1.2.1
+ (c++|optional=templinst|arch=amd64)"std::vector<std::vector<bool, std::allocator<bool> >, std::allocator<std::vector<bool, std::allocator<bool> > > >::vector(unsigned long, std::vector<bool, std::allocator<bool> > const&, std::allocator<std::vector<bool, std::allocator<bool> > > const&)@Base" 1.6.0
+ (c++|optional=templinst)"std::__shrink_to_fit_aux<std::vector<std::vector<bool, std::allocator<bool> >, std::allocator<std::vector<bool, std::allocator<bool> > > >, true>::_S_do_it(std::vector<std::vector<bool, std::allocator<bool> >, std::allocator<std::vector<bool, std::allocator<bool> > > >&)@Base" 1.6.0
+ (c++|optional=templinst)"std::vector<std::vector<bool, std::allocator<bool> >, std::allocator<std::vector<bool, std::allocator<bool> > > >::vector(unsigned long, std::vector<bool, std::allocator<bool> > const&, std::allocator<std::vector<bool, std::allocator<bool> > > const&)@Base" 1.6.0
+ (c++|optional=templinst)"std::vector<std::vector<bool, std::allocator<bool> >, std::allocator<std::vector<bool, std::allocator<bool> > > >::~vector()@Base" 1.2.1
+ (c++|optional=templinst)"void std::vector<std::vector<unsigned char, std::allocator<unsigned char> >, std::allocator<std::vector<unsigned char, std::allocator<unsigned char> > > >::_M_realloc_insert<std::vector<unsigned char, std::allocator<unsigned char> > >(__gnu_cxx::__normal_iterator<std::vector<unsigned char, std::allocator<unsigned char> >*, std::vector<std::vector<unsigned char, std::allocator<unsigned char> >, std::allocator<std::vector<unsigned char, std::allocator<unsigned char> > > > >, std::vector<unsigned char, std::allocator<unsigned char> >&&)@Base" 1.2.1
+ (c++|optional=templinst)"std::vector<bool, std::allocator<bool> >::_M_insert_aux(std::_Bit_iterator, bool)@Base" 1.2.1
+ (c++|optional=templinst)"void std::vector<bool, std::allocator<bool> >::_M_insert_range<std::_Bit_const_iterator>(std::_Bit_iterator, std::_Bit_const_iterator, std::_Bit_const_iterator, std::forward_iterator_tag)@Base" 1.2.1
+ (c++|optional=templinst)"std::vector<bool, std::allocator<bool> >::vector(std::vector<bool, std::allocator<bool> > const&)@Base" 1.6.0
+ (c++|optional=templinst)"void std::vector<unsigned char, std::allocator<unsigned char> >::emplace_back<unsigned char>(unsigned char&&)@Base" 1.2.1
+ (c++|optional=templinst)"void std::vector<unsigned char, std::allocator<unsigned char> >::_M_range_insert<__gnu_cxx::__normal_iterator<unsigned char const*, std::vector<unsigned char, std::allocator<unsigned char> > > >(__gnu_cxx::__normal_iterator<unsigned char*, std::vector<unsigned char, std::allocator<unsigned char> > >, __gnu_cxx::__normal_iterator<unsigned char const*, std::vector<unsigned char, std::allocator<unsigned char> > >, __gnu_cxx::__normal_iterator<unsigned char const*, std::vector<unsigned char, std::allocator<unsigned char> > >, std::forward_iterator_tag)@Base" 1.2.1
+ (c++|optional=templinst)"void std::vector<int, std::allocator<int> >::_M_insert_aux<int>(__gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, int&&)@Base" 1.2.1
+ (c++|optional=templinst)"void std::vector<int, std::allocator<int> >::_M_realloc_insert<int const&>(__gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, int const&)@Base" 1.6.0
+ (c++|optional=templinst)"void std::vector<int, std::allocator<int> >::_M_realloc_insert<int>(__gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, int&&)@Base" 1.2.1
+ (c++)"typeinfo for qrcodegen::data_too_long@Base" 1.4.0
+ (c++)"typeinfo name for qrcodegen::data_too_long@Base" 1.4.0
+ (c++)"vtable for qrcodegen::data_too_long@Base" 1.4.0
